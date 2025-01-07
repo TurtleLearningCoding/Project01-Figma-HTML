@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* === common === */
+/* AP DUNG CHO TOAN TRANG */
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    color: #FFF;
+    display: inline-block;
+    padding: 0px 16px;
+    line-height: 50px;
+    min-width: 118px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: #171100;
+    border-radius: 24.5px;
+
+}
+
+/* === header === */
+.header {
+    background: #FFFCF4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    color: #5F5B53;
+    font-size: 1.6rem;
+    padding: 8px 21px;
+    position: relative;
+}
+
+.nav li.active a,
+.nav a:hover {
+    color: #171100;
+    /* text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; */
+    /* 175% */
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after {
+    display: flex;
+    position: absolute;
+    left: 21px;
+    bottom: 6;
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+}
+
+header .bth-sign-up {
+    min-width: 144px;
+}
+
+.header .action {
+    margin-left: 49px;
+}
